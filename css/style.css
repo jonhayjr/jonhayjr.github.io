@@ -6,7 +6,10 @@ html {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 body {
-    background-color: #696969;
+    background-image: linear-gradient(rgba(26, 26, 27, 0.472), rgba(47, 53, 92, 0.541)),
+                  url("../../img/CodeBackground.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 header {
