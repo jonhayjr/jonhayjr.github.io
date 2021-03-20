@@ -1,0 +1,237 @@
+hr {
+    background-color: white;
+    height: 1px;
+    border: none;
+}
+
+img {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    image-rendering: optimizeSpeed;             /*                     */
+    image-rendering: -moz-crisp-edges;          /* Firefox             */
+    image-rendering: -o-crisp-edges;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: pixelated;                 /* Chrome as of 2019   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+    image-rendering: auto;
+}
+
+/*Header*/
+.header-text {
+    font-size: 40px;
+}
+
+.header-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-image-orange {
+    background-image: linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.055)), url("../img/sbimage.jpeg");
+}
+
+.background-image-purple {
+    background-image: linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.73)), url("../img/sbimage.jpeg");
+}
+
+.img-radius {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+/*Project*/
+.custom-select {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 300px;
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+.card img {
+    height: 220px;
+}
+
+.card .btn-secondary,
+.card .btn-dark {
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .btn-secondary:hover {
+    color: #6c757d;
+    background-color: white;
+    border: 2px solid #6c757d;
+}
+
+.card .btn-dark:hover {
+    color: #343a40;
+    background-color: white;
+    border: 2px solid #343a40;
+}
+
+.project-skills li {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid black;
+}
+
+.project-skills li:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+/*List Item Styling*/
+.list-item-html5 {
+    background-color: #e34f26;
+    color: white;
+}
+
+.list-item-html5-inverted {
+    background-color: white;
+    color: #e34f26;
+    cursor: pointer;
+}
+
+.list-item-css3 {
+    background-color: #2759AE;
+    color: white;
+}
+
+.list-item-css3-inverted {
+    color: #2759AE;
+    background-color: white;
+    cursor: pointer;
+}
+
+.list-item-javascript {
+    background-color: #f7df1e;
+    color: black;
+}
+
+.list-item-javascript-inverted {
+    color: #f7df1e;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.list-item-sass {
+    color: #CD6799;
+}
+
+.list-item-sass-inverted {
+    background-color: #CD6799;
+    color: white;
+    cursor: pointer;
+}
+
+.list-item-sql {
+    background-color: #CFD8DC;
+    color: #B71C1C;
+}
+
+.list-item-sql-inverted {
+    color: #CFD8DC;
+    background-color: #B71C1C;
+    cursor: pointer;
+}
+
+.list-item-github {
+    background-color: #333;
+    color: white;
+}
+
+.list-item-github-inverted {
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+}
+
+.list-item-git {
+    color: #F34F29;
+}
+
+.list-item-git-inverted {
+    background-color: #F34F29;
+    color: white;
+    cursor: pointer;
+}
+
+.list-item-bootstrap {
+    color: white;
+    background-color: #563d7c;
+}
+
+.list-item-bootstrap-inverted {
+    background-color: white;
+    color: #563d7c;
+    cursor: pointer;
+}
+
+.skills .list-group-item {
+    border-radius: 15px 15px;
+}
+
+/*Contact*/
+.contact svg {
+    height: 50px;
+    width: 50px;
+}
+
+.email {
+    fill: rgba(255, 255, 255, 0.753);
+}
+
+.linkedin {
+    fill: #2867B2;
+}
+
+.github {
+    fill: #333;
+}
+
+a > svg {
+    transition: all 0.3s ease-in-out;
+}
+
+a > svg:hover {
+    transform: scale(1.5);
+    opacity: 0.75;
+}
+
+/*Class to hide project cards*/
+.hidden {
+    display: none;
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+    .card:hover {
+        transform: scale(1.1);
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .skills-used {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills-used {
+        font-size: 14px;
+    }
+}
