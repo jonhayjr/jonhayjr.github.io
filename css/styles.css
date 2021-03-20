@@ -1,22 +1,18 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
 hr {
     background-color: white;
     height: 1px;
     border: none;
 }
 
-img {
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    image-rendering: optimizeSpeed;             /*                     */
-    image-rendering: -moz-crisp-edges;          /* Firefox             */
-    image-rendering: -o-crisp-edges;            /* Opera               */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
-    image-rendering: pixelated;                 /* Chrome as of 2019   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
-    image-rendering: auto;
+.hidden {
+    display: none;
 }
-
+/* ================================= 
+    Base Layout Styles
+==================================== */
 /*Header*/
 .header-text {
     font-size: 40px;
@@ -46,7 +42,7 @@ img {
     line-height: 2;
 }
 
-/*Project*/
+/*Projects*/
 .custom-select {
     background-color: white;
     margin: 0 auto;
@@ -54,12 +50,10 @@ img {
     max-width: 300px;
 }
 
-.card {
-    transition: all 0.3s ease-in-out;
-}
-
 .card img {
-    height: 220px;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 0 auto;
 }
 
 .card .btn-secondary,
@@ -92,8 +86,7 @@ img {
     cursor: pointer;
 }
 
-
-/*List Item Styling*/
+/*Skills*/
 .list-item-html5 {
     background-color: #e34f26;
     color: white;
@@ -126,7 +119,6 @@ img {
     background-color: black;
     cursor: pointer;
 }
-
 
 .list-item-sass {
     color: #CD6799;
@@ -212,13 +204,15 @@ a > svg:hover {
     opacity: 0.75;
 }
 
-/*Class to hide project cards*/
-.hidden {
-    display: none;
-}
-
-/*Media Queries*/
+/* ================================= 
+    Media Queries
+==================================== */
 @media (min-width: 768px) {
+    .card {
+        transform: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
     .card:hover {
         transform: scale(1.1);
         z-index: 99;
