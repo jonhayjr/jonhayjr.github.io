@@ -87,6 +87,10 @@ hr {
 }
 
 /*Skills*/
+.skills-used {
+    font-size: 12px;
+}
+
 .list-item-html5 {
     background-color: #e34f26;
     color: white;
