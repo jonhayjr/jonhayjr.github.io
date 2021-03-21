@@ -15,8 +15,9 @@ hr {
 #projects,
 #skills,
 #contact {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 17rem;
 }
+
 /* ================================= 
     Base Layout Styles
 ==================================== */
@@ -221,6 +222,14 @@ a > svg:hover {
     Media Queries
 ==================================== */
 @media (min-width: 768px) {
+/*Navigation*/
+#about, 
+#projects,
+#skills,
+#contact {
+    scroll-margin-top: 3.5rem;
+}
+
 /*Header*/
 .header-text {
     font-size: 38px;
