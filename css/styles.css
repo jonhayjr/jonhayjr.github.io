@@ -214,6 +214,11 @@ a > svg:hover {
     Media Queries
 ==================================== */
 @media (min-width: 768px) {
+/*Header*/
+.header-text {
+    font-size: 38px;
+}
+
 /*Projects*/
     .card {
         transform: none;
