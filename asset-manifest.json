@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jonhayjr/jonhayjr.github.io/static/css/main.fd1f390f.chunk.css",
+    "main.js": "/jonhayjr/jonhayjr.github.io/static/js/main.720a8f26.chunk.js",
+    "main.js.map": "/jonhayjr/jonhayjr.github.io/static/js/main.720a8f26.chunk.js.map",
+    "runtime-main.js": "/jonhayjr/jonhayjr.github.io/static/js/runtime-main.22a9783c.js",
+    "runtime-main.js.map": "/jonhayjr/jonhayjr.github.io/static/js/runtime-main.22a9783c.js.map",
+    "static/js/2.312fb6a0.chunk.js": "/jonhayjr/jonhayjr.github.io/static/js/2.312fb6a0.chunk.js",
+    "static/js/2.312fb6a0.chunk.js.map": "/jonhayjr/jonhayjr.github.io/static/js/2.312fb6a0.chunk.js.map",
+    "static/js/3.03cce247.chunk.js": "/jonhayjr/jonhayjr.github.io/static/js/3.03cce247.chunk.js",
+    "static/js/3.03cce247.chunk.js.map": "/jonhayjr/jonhayjr.github.io/static/js/3.03cce247.chunk.js.map",
+    "index.html": "/jonhayjr/jonhayjr.github.io/index.html",
+    "static/css/main.fd1f390f.chunk.css.map": "/jonhayjr/jonhayjr.github.io/static/css/main.fd1f390f.chunk.css.map",
+    "static/js/2.312fb6a0.chunk.js.LICENSE.txt": "/jonhayjr/jonhayjr.github.io/static/js/2.312fb6a0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22a9783c.js",
+    "static/js/2.312fb6a0.chunk.js",
+    "static/css/main.fd1f390f.chunk.css",
+    "static/js/main.720a8f26.chunk.js"
+  ]
+}
