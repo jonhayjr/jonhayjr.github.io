@@ -58,6 +58,7 @@ const Projects = () => {
                                     <option value="React">React</option>
                                     <option value="Express">Express</option>
                                     <option value="Pug">Pug</option>
+                                    <option value="SVG">SVG</option>
                                     <option value="Sequelize">Sequelize</option>
                                     <option value="SQL">SQL</option>
                                 </select>
