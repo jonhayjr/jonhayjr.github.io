@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect( () => {
     // This line will trigger on a route change
-    ReactGA.pageview(window.location.pathname); 
+    ReactGA.pageview(window.location.pathname + window.location.search); 
 });
 
   return (
