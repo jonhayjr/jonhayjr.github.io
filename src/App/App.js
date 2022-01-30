@@ -11,12 +11,13 @@ import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
+ReactGA.initialize('UA-218955886-1');
+
 const App = () => {
 
   useEffect( () => {
-    ReactGA.initialize('UA-218955886-1');
     // This line will trigger on a route change
-    ReactGA.pageview('/'); 
+    ReactGA.pageview(window.location.pathname); 
 });
 
   return (
