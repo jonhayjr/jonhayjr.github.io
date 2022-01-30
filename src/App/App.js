@@ -1,3 +1,6 @@
+import ReactGA from 'react-ga';
+import React, {useEffect} from 'react'
+
 //Import Components
 import Navbar from '../Navbar/Navbar';
 import Header from '../Header/Header';
@@ -8,6 +11,11 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
 const App = () => {
+
+  useEffect(() => {
+    ReactGA.initialize('G-9KXNZ3VJ8K');
+    ReactGA.pageview(window.location.pathname + window.location.search)
+    },[]);
   
   return (
     <div className="App">
