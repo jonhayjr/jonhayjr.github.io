@@ -23,6 +23,9 @@ const Navbar = () => {
                             <a className="nav-link text-white" href="/#skills">Skills</a>
                         </li>
                         <li className="nav-item mx-3">
+                            <a className="nav-link text-white" href="../JonHayJrResume.pdf" download>Resume</a>
+                        </li>
+                        <li className="nav-item mx-3">
                             <a className="nav-link text-white" href="/#contact">Contact</a>
                         </li>
                     </ul>
