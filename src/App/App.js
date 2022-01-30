@@ -14,7 +14,7 @@ import Footer from '../Footer/Footer';
 const App = () => {
 
   useEffect( () => {
-    ReactGA.initialize('UA-218915378-2');
+    ReactGA.initialize('UA-218955886-1');
     // This line will trigger on a route change
     ReactGA.pageview('/'); 
 });
