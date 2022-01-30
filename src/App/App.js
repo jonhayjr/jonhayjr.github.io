@@ -11,11 +11,10 @@ import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
-ReactGA.initialize('UA-218915378-1');
-
 const App = () => {
 
   useEffect( () => {
+    ReactGA.initialize('UA-218915378-1');
     // This line will trigger on a route change
     ReactGA.pageview(window.location.pathname + window.location.search); 
 });
