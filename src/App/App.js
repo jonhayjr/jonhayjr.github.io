@@ -16,10 +16,8 @@ const App = () => {
   useEffect( () => {
     ReactGA.initialize('UA-218915378-2');
     // This line will trigger on a route change
-    ReactGA.pageview(window.location.pathname + window.location.search); 
+    ReactGA.pageview('/'); 
 });
-
-
 
   return (
     <div className="App">
