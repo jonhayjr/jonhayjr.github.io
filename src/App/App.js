@@ -13,11 +13,11 @@ import Footer from '../Footer/Footer';
 
 const App = () => {
 
-  useEffect( () => {
-    ReactGA.initialize('UA-218915378-2');
-    // This line will trigger on a route change
-    ReactGA.pageview('/'); 
-});
+//   useEffect( () => {
+//     ReactGA.initialize('UA-218915378-2');
+//     // This line will trigger on a route change
+//     ReactGA.pageview('/'); 
+// });
 
   return (
     <div className="App">
