@@ -23,7 +23,6 @@ const Header = () => {
     //Variable to store class name
     const className = `header header-background jumbotron-fluid background-image-${color}`;
     
-
     return (
         <header className={className}>
             <div className="container-fluid py-5" onMouseEnter={handleHover} onMouseLeave={handleHover}>

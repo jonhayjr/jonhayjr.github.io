@@ -1,37 +1,42 @@
 import React from 'react';
+import {FaTimes, FaBars} from 'react-icons/fa';
+
+import useToggler from '../hooks/useToggler';
 
 const Navbar = () => {
+    const [show, handleClick] = useToggler(true);
+
     return (
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark py-3 sticky-top" id="navbar">
-            <div className="container-fluid">
-                <a className="navbar-brand justify-content-md-start" href="/">Jon Hay</a>
-                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse navbar-toggleable-xs justify-content-md-end text-center" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" aria-current="page" href="/#home">Home</a>
-                        </li>
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" href="/#about">About</a>
-                        </li>
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" href="/#projects">Projects</a>
-                        </li>
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" href="/#skills">Skills</a>
-                        </li>
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" href="../JonHayJrResume.pdf" download>Resume</a>
-                        </li>
-                        <li className="nav-item mx-3">
-                            <a className="nav-link text-white" href="/#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <>
+        <div className='desktop-nav bg-dark text-white p-4 d-flex justify-content-between align-items-center sticky-top'>
+        <a href='/'><h1 className='logo m-0 font-weight-bold text-white'>Jon Hay</h1></a>
+           <nav className='d-sm-none d-md-none d-none d-lg-flex justify-content-between h3 nav'>
+                <a href='/#home' className='mr-5'>Home</a>
+                <a href='/#about' className='mr-5'>About</a>
+                <a href='/#projects' className='mr-5'>Projects</a>
+                <a href='/#skills' className='mr-5'>Skills</a>
+                <a href='../JonHayJrResume.pdf' download className='mr-5'>Resume</a>
+                <a href='/#contact' className=''>Contact</a>
+            </nav>
+            <div className='mobile-hamburger d-lg-none' onClick={handleClick}>
+                {show ? <FaBars size={30}/> : <FaTimes size={30}/>}
             </div>
-        </nav>
+        </div>
+     
+           {!show && <div className='mobile-menu bg-dark text-white d-lg-none flex-column text-center position-fixed top-0 left-0 py-5 nav'>
+                <a href='/#home' className='mb-4 h1' onClick={handleClick}>Home</a>
+                <hr className='nav-divider'/>
+                <a href='/#about' className='my-4 h1' onClick={handleClick}>About</a>
+                <hr className='nav-divider'/>
+                <a href='/#projects' className='my-4 h1' onClick={handleClick}>Projects</a>
+                <hr className='nav-divider'/>
+                <a href='/#skills' className='my-4 h1' onClick={handleClick}>Skills</a>
+                <hr className='nav-divider'/>
+                <a href='../JonHayJrResume.pdf' download className='my-4 h1' onClick={handleClick}>Resume</a>
+                <hr className='nav-divider'/>
+                <a href='/contact' className='mt-4 h1' onClick={handleClick}>Contact</a>
+            </div>}
+        </>
     )
 }
 
