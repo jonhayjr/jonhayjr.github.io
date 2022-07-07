@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import {FaTimes, FaBars} from 'react-icons/fa';
 
 import useToggler from '../hooks/useToggler';
@@ -11,12 +12,12 @@ const Navbar = () => {
         <div className='desktop-nav bg-dark text-white p-4 d-flex justify-content-between align-items-center sticky-top'>
         <a href='/'><h1 className='logo m-0 font-weight-bold text-white'>Jon Hay</h1></a>
            <nav className='d-sm-none d-md-none d-none d-lg-flex justify-content-between h3 nav'>
-                <a href='/#home' className='mr-5'>Home</a>
-                <a href='/#about' className='mr-5'>About</a>
-                <a href='/#projects' className='mr-5'>Projects</a>
-                <a href='/#skills' className='mr-5'>Skills</a>
-                <a href='../JonHayJrResume.pdf' download className='mr-5'>Resume</a>
-                <a href='/#contact' className=''>Contact</a>
+                <Link to='home' className='mr-5 nav-link' activeClass='active' smooth={true} offset={0} duration={500}>Home</Link>
+                <Link to='about' className='mr-5 nav-link' activeClass='active' smooth={true} offset={-125} duration={500}>About</Link>
+                <Link to='projects' className='mr-5 nav-link' activeClass='active' smooth={true} offset={-100} duration={500}>Projects</Link>
+                <Link to='skills' className='mr-5 nav-link' activeClass='active' smooth={true} offset={-100} duration={500}>Skills</Link>
+                <a href='../JonHayJrResume.pdf' download className='mr-5 nav-link'>Resume</a>
+                <Link to='contact' className='nav-link' activeClass='active' smooth={true} offset={-500} duration={500}>Contact</Link>
             </nav>
             <div className='mobile-hamburger d-lg-none' onClick={handleClick}>
                 {show ? <FaBars size={30}/> : <FaTimes size={30}/>}
