@@ -7,8 +7,8 @@ const About = () => {
                     <div className="col">
                         <h5 className="display-4">About</h5>
                         <img src={`${process.env.PUBLIC_URL}/img/JonHeadShot.jpeg`} className="img-fluid img-radius my-3" alt="Jon Headshot"/>
-                        <p className="lead line-height text-left">My passion for programming began after I took my first programming class in high school.  In January 2021, I decided to take this passion to the next level and enrolled in the Front End Development Techdegree Program with Team Treehouse.</p>
-                        <p className="lead line-height text-left">After completing this Techdegree, I still wanted to learn more and decided to pursue the Full Stack JavaScript Techdegree which I completed in July 2021.  In my free time, you can find me learning new programming technologies or building cool projects.  You can check out some of those projects below.</p>
+                        <p className="lead line-height text-left w-75 mx-auto">My passion for programming began after I took my first programming class in high school.  In January 2021, I decided to take this passion to the next level and enrolled in the Front End Development Techdegree Program with Team Treehouse.</p>
+                        <p className="lead line-height text-left w-75 mx-auto">After completing this Techdegree, I still wanted to learn more and decided to pursue the Full Stack JavaScript Techdegree which I completed in July 2021.  In my free time, you can find me learning new programming technologies or building cool projects.  You can check out some of those projects below.</p>
                     </div>
                     </div>
                 </div>

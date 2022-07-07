@@ -67,7 +67,7 @@ const Projects = () => {
                     </div>
                 </div>
                 {isLoading ?
-                <p className="lead text-white mb-4 text-center mt-4">Loading...</p>
+                <p className="h3 text-white mb-4 text-center mt-4">Loading...</p>
                 : <Project projects={data}/>
                 }
             </section>

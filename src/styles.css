@@ -86,15 +86,13 @@ a:hover {
     max-width: 300px;
 }
 
-#projects 
 .card {
     cursor: pointer;
 }
 
-.card img {
-    max-width: 350px;
-    height: auto;
-    margin: 0 auto;
+.card > img {
+    object-fit: contain;
+    height: 50%;
 }
 
 .card .btn-secondary,

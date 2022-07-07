@@ -8,7 +8,7 @@ const Project = ({projects}) => {
         (
             <div className="text-center mb-4 col-xs-12 col-md-6 col-lg-4" key={index} data-index={index}>
                 <div className="card text-center bg-light border-dark rounded h-100 p-4">
-                    <img src={`${process.env.PUBLIC_URL}/img/${project.image}`} className="card-img-top img-fluid mb-4" alt={project.name}/>
+                    <img src={`${process.env.PUBLIC_URL}/img/${project.image}`} className="mb-4" alt={project.name}/>
                     <div className="card-body d-flex flex-column text-center">
                         <h5 className="card-title">{project.name}</h5>
                         <p className="card-text">{project.description}</p>
