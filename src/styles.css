@@ -56,10 +56,6 @@ a:hover {
 }
 
 /*Header*/
-.header-text {
-    font-size: 40px;
-}
-
 .header-background {
     background-size: cover;
     background-repeat: no-repeat;
