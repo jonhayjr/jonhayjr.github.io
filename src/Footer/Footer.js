@@ -1,15 +1,20 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Footer = () => {
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      }
     return (
         <footer className="bg-dark mt-5 py-3">
             <div className="container-fluid">
             <div className="row text-center justify-content-center">
                 <div className="col">
-                <p className="text-white m-0">Created by Jon Hay</p>
+                <p className="text-white m-0 h5">Created by Jon Hay</p>
                 </div>
             </div>
             <div className="row text-center justify-content-center pt-3">
                 <div className="col">
-                <a href="#top" className="text-primary lead">Back To Top</a>
+                    <button className="text-primary lead footer-link" onClick={scrollToTop}>Back To Top</button>
                 </div>
             </div>
             </div>

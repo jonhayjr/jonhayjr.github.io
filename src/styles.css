@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 /* ================================= 
   Base Element Styles
 ==================================== */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    overflow-x: scroll;
 }
 
 hr {
@@ -34,6 +32,7 @@ a:hover {
 .logo {
     letter-spacing: 1.5px;
 }
+
 .mobile-menu {
     z-index: 100;
     height: 100%;
@@ -61,8 +60,8 @@ a:hover {
     cursor: pointer;
 }
 
-.nav-link > .active {
-    border-bottom: 1px solid #000;
+.active {
+    border-bottom: 1px solid #fff;
 }
 
 /*Header*/
@@ -362,6 +361,23 @@ a > svg:hover {
 
 .error p {
     padding-bottom: 1rem;
+}
+
+/*Footer*/
+.footer-link {
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    opacity: 0.75
+}
+
+.footer-link:focus {
+    border: none;
+    outline: none;
 }
 
 /* ================================= 
