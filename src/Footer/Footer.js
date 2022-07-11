@@ -1,11 +1,11 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
     const scrollToTop = () => {
         scroll.scrollToTop();
       }
     return (
-        <footer className="bg-dark mt-5 py-3">
+        <footer className="bg-dark mt-5 py-3 footer">
             <div className="container-fluid">
             <div className="row text-center justify-content-center">
                 <div className="col">
