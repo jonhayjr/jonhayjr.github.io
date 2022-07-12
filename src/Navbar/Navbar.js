@@ -4,38 +4,43 @@ import {FaTimes, FaBars} from "react-icons/fa";
 
 import useToggler from "../hooks/useToggler";
 
-const Navbar = () => {
-    const [show, handleClick] = useToggler(true);
+const Navbar = ({updateTitle}) => {
+    const [show, handleToggle] = useToggler(true);
+
+    const handleMobileClick = (newTitle) => {
+        updateTitle(newTitle);
+        handleToggle();
+    }
 
     return (
         <>
         <div className="desktop-nav bg-dark text-white p-4 d-flex justify-content-between align-items-center sticky-top">
-        <a href="/"><h1 className="logo m-0 font-weight-bold text-white">Jon Hay</h1></a>
-           <nav className="d-sm-none d-md-none d-none d-lg-flex justify-content-between h3 nav">
-                <Link to="home" className="mr-5 nav-link" smooth={true} offset={-100} duration={500}>Home</Link>
-                <Link to="about" className="mr-5 nav-link" smooth={true} offset={-75} duration={500}>About</Link>
-                <Link to="projects" className="mr-5 nav-link" smooth={true} offset={-100} duration={500}>Projects</Link>
-                <Link to="skills" className="mr-5 nav-link" smooth={true} offset={-100} duration={500}>Skills</Link>
-                <a href="../JonHayJrResume.pdf" download className="mr-5 nav-link">Resume</a>
-                <Link to="contact" className="nav-link" smooth={true} offset={5000} duration={500}>Contact</Link>
+        <Link to="home" smooth={true} offset={-100} duration={500} onClick={() => {updateTitle("Home")}}><h1 className="logo m-0 font-weight-bold text-white">Jon Hay</h1></Link>
+           <nav className="d-sm-none d-md-none d-lg-none d-none d-xl-flex justify-content-between h3 nav">
+                <Link to="home" className="mr-5 nav-link nav-link--desktop" smooth={true} offset={-100} duration={500} onClick={() => {updateTitle("Home")}}>Home</Link>
+                <Link to="about" className="mr-5 nav-link nav-link--desktop" smooth={true} offset={-75} duration={500} onClick={() => {updateTitle("About")}}>About</Link>
+                <Link to="projects" className="mr-5 nav-link nav-link--desktop" smooth={true} offset={-100} duration={500} onClick={() => {updateTitle("Projects")}}>Projects</Link>
+                <Link to="skills" className="mr-5 nav-link nav-link--desktop" smooth={true} offset={-100} duration={500} onClick={() => {updateTitle("Skills")}}>Skills</Link>
+                <a href="../JonHayJrResume.pdf" download className="mr-5 nav-link nav-link--desktop" onClick={() => {updateTitle("Resume")}}>Resume</a>
+                <Link to="contact" className="nav-link nav-link--desktop" smooth={true} offset={5000} duration={500} onClick={() => {updateTitle("Contact")}}>Contact</Link>
             </nav>
-            <div className="mobile-hamburger d-lg-none" onClick={handleClick}>
+            <div className="mobile-hamburger d-xl-none" onClick={handleToggle}>
                 {show ? <FaBars size={30}/> : <FaTimes size={30}/>}
             </div>
         </div>
      
-           {!show && <div className="mobile-menu bg-dark text-white d-lg-none flex-column text-center position-fixed top-0 left-0 py-5 nav">
-                <a href="/#home" className="mb-4 h2" onClick={handleClick}>Home</a>
+           {!show && <div className="mobile-menu bg-dark text-white d-xl-none flex-column text-center position-fixed top-0 left-0 py-5 nav">
+                <Link to="home" className="mb-4 h2 nav-link" smooth={true} offset={-100} duration={500} onClick={() => {handleMobileClick("Home")}}>Home</Link>
                 <hr className="nav-divider"/>
-                <a href="/#about" className="my-4 h2" onClick={handleClick}>About</a>
+                <Link to="about" className="my-4 h2" smooth={true} offset={-100} duration={500} onClick={() => {handleMobileClick("About")}}>About</Link>
                 <hr className="nav-divider"/>
-                <a href="/#projects" className="my-4 h2" onClick={handleClick}>Projects</a>
+                <Link to="projects" className="my-4 h2 nav-link" smooth={true} offset={-100} duration={500} onClick={() => {handleMobileClick("Projects")}}>Projects</Link>
                 <hr className="nav-divider"/>
-                <a href="/#skills" className="my-4 h2" onClick={handleClick}>Skills</a>
+                <Link to="skills" className="my-4 h2 nav-link" smooth={true} offset={-100} duration={500} onClick={() => {handleMobileClick("Skills")}}>Skills</Link>
                 <hr className="nav-divider"/>
-                <a href="../JonHayJrResume.pdf" download className="my-4 h2" onClick={handleClick}>Resume</a>
+                <a href="../JonHayJrResume.pdf" download className="my-4 h2 nav-link" onClick={() => {handleMobileClick("Resume")}}>Resume</a>
                 <hr className="nav-divider"/>
-                <a href="/contact" className="mt-4 h2" onClick={handleClick}>Contact</a>
+                <Link to="contact" className="mt-4 h2 nav-link" smooth={true} offset={5000} duration={500}  onClick={() => {handleMobileClick("Contact")}}>Contact</Link>
             </div>}
         </>
     )

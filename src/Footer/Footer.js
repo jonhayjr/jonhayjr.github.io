@@ -1,8 +1,9 @@
 import { animateScroll as scroll } from "react-scroll";
 
-const Footer = () => {
+const Footer = ({updateTitle}) => {
     const scrollToTop = () => {
         scroll.scrollToTop();
+        updateTitle("Home")
       }
     return (
         <footer className="bg-dark mt-5 py-3 footer">

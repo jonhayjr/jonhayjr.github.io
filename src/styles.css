@@ -45,9 +45,12 @@ a:hover {
     font-size: 3rem;
 }
 
-.nav > a:hover {
-    border-bottom: 1px solid #fff;
+.nav-link:hover {
     cursor: pointer;
+}
+
+.nav-link--desktop:hover {
+    border-bottom: 1px solid #fff;
 }
 
 .nav-divider {
