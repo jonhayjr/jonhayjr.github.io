@@ -29,8 +29,8 @@ const Header = () => {
             <div className="container-fluid py-5" onMouseEnter={handleHover} onMouseLeave={handleHover}>
             <div className="row text-white text-center">
                 <div className="col">
-                    {!hover && <p id="header-text-1" className="header-text">My name is Jon</p>}
-                    { hover && <p id="header-text-2" className="header-text">And I'm a software engineer from Santa Barbara.</p>}
+                    {!hover && <p id="header-text-1" className="header-text">My name is Jon Hay</p>}
+                    { hover && <p id="header-text-2" className="header-text">And I'm a software engineer from Boise, Idaho.</p>}
                 </div>
             </div>
             </div>
